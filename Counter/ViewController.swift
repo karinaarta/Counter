@@ -15,5 +15,12 @@ class ViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var label: UILabel!
+    private var score = 0
+    
+    @IBAction func tapButton(_ sender: Any) {
+        score += 1
+        label.text = "\(score)"
+    }
 }
 
